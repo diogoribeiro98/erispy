@@ -1,7 +1,7 @@
 import numpy as np
 from astropy.io import fits
 
-def get_science_data(file, nanto=0.0):
+def get_science_data(file):
 	with fits.open(file, mode='update') as hdul:
 		data = hdul[0].data
 	return data

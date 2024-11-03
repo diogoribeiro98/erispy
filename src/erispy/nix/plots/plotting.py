@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
 from astropy.visualization import (PercentileInterval, AsinhStretch, ImageNormalize, LogStretch)
 
-from .data import get_science_data
+from ..data import get_science_data
 
 def plot_file_frame(file, output_folder='./figures/', frame=0, percentile=99.5, cmap='gray'):
 
