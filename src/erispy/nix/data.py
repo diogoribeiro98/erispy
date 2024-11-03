@@ -11,6 +11,11 @@ def get_calib_data(file):
 		data = hdul[1].data
 	return data
 
+def get_bpm(file):
+	with fits.open(file, mode='update') as hdul:
+		data = hdul[4].data
+	return data
+
 def get_offset_rows(data, nrows=2):
 	lrows  = data[-nrows:, :]    
 	return lrows
